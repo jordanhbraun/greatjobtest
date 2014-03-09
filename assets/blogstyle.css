@@ -1,0 +1,58 @@
+/*
+Name:     		Blog Style CSS
+Description:    Basic theme / non responsive *yet*
+Author:         Great Job
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+#entry {
+	padding-bottom: 8em;
+	display: inline-block;
+}
+#blogimage {
+	padding-right: 4%;
+	float: left;
+}
+.blogpic {
+	height: 320px;
+	width: 480px;
+}
+#blogtext {
+	width: 55%;
+	float: right;
+	display: block;
+}
+#blogtext > h2 {
+	padding-bottom: .25em;
+}
+#blogtext > h3 {
+	padding-bottom: .25em;
+}
+#blogtext > p {
+	padding-bottom: .75em;
+}
+.readmore {
+	font-size: 1.25em;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+/*responsive section*/
+@media screen and (max-width: 480px) {
+	#entry {
+		padding-bottom: 6em;
+		display: inline-block;
+	}	
+	#blogimage{
+		padding: 0 0 .75em 0;
+		float: none;
+	}
+	.blogpic {
+		height: auto;
+		width: 100%;
+	}
+	#blogtext {
+		float: left;
+		width: 100%;
+	}
+}

@@ -1,0 +1,49 @@
+/*
+Name:     		Individual Project Style CSS
+Description:    Basic theme / non responsive *yet*
+Author:         Great Job
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+body {
+
+}
+.quarter, .third, .half {
+    float: left;
+    padding-right: 2%;
+}
+.half {
+	width: 48.5714%;
+}
+.half:nth-child(4n) {
+    margin-right: 0;
+}
+.half:last-child {
+    margin-right: 0;
+    text-align:right;
+}
+.third {
+    width: 32%;
+    padding-bottom: 4em;
+}
+.third:nth-child(3n) {
+    padding-right: 0;
+}
+#work {
+	width: 100%;
+}
+.credit {
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	/*margin-top: 1.25em;*/
+	display: block;
+}
+#content > img {
+	max-width: 100;
+	padding-bottom: 2em;
+}
+#content {
+	padding-bottom: 3em;
+}

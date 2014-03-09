@@ -1,0 +1,69 @@
+/*
+Name:     		About Style CSS
+Description:    Basic theme responsive
+Author:         Great Job
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+#team {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+    display: inline-block;
+    width: 100%;
+	text-align: left;
+}
+h2{
+	padding-bottom: .25em;
+}
+#team h3{
+	padding-top: 1em;
+	padding-bottom: .25em;
+}
+#contact {
+	display: block;
+	padding-bottom: 5em;
+}
+#contact p {
+	display: inline;
+	padding: 0;
+}
+.quarter, .third, .half {
+    float: left;
+    padding-right: 2%;
+}
+.half {
+	width: 48.5714%;
+}
+.half:nth-child(4n) {
+    margin-right: 0;
+}
+.half:last-child {
+    margin-right: 0;
+    text-align:right;
+}
+.third {
+    width: 32%;
+    padding-bottom: 4em;
+}
+.third:nth-child(3n) {
+    padding-right: 0;
+}
+#content > div > .third {
+	padding-bottom: 6em;
+}
+/*responsive section*/
+@media screen and (max-width: 480px) {
+	.third {
+    	width: 100%;
+    	padding-bottom: 2em;
+    }
+    #content > div > .third {
+	padding-bottom: 2em;
+	}
+	#team h3{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	}
+}

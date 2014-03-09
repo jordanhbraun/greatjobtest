@@ -1,0 +1,47 @@
+/*
+Name:     		Consulting Style CSS
+Description:    Basic theme responsive
+Author:         Great Job
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+#content {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+.quarter, .third, .half {
+    float: left;
+    padding-right: 3%;
+}
+.third {
+    width: 31%;
+    padding-bottom: 4em;
+}
+.third:nth-child(3n) {
+    padding-right: 0;
+}
+#content > div > .third {
+    padding-bottom: 6em;
+}
+.credit {
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	/*margin-top: 1.25em;*/
+	display: block;
+}
+/*responsive section*/
+@media screen and (max-width: 480px) {
+    .third {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    #content > div > .third {
+        padding-bottom: 2em;
+    }
+}
